@@ -1,0 +1,69 @@
+/*!
+*
+* Template: Datum - Responsive Bootstrap 4 Admin Dashboard Template
+* Author: iqonic.design
+* Design and Developed by: iqonic.design
+* NOTE: This file contains the styling for responsive Template.
+*
+*/
+
+// Bootstrap Function and Mixines and Variables
+@import "./bootstrap/functions";
+@import "./bootstrap/mixins";
+
+// Helper Function and Mixines and Variables
+@import "./custom_variable";
+@import "./variable";
+// Custom Variables
+@import "./helper/functions";
+@import "./helper/mixins";
+@import "./bootstrap/variables";
+@import "./helper/root";
+@import "./bootstrap/root";
+@import "./helper/fonts";
+
+// Bootstrap components
+@import "./bootstrap/reboot";
+@import "./bootstrap/type";
+@import "./bootstrap/images";
+@import "./bootstrap/code";
+@import "./bootstrap/spinners";
+@import "./bootstrap/grid";
+@import "./bootstrap/tables";
+@import "./bootstrap/forms";
+@import "./bootstrap/transitions";
+@import "./bootstrap/dropdown";
+@import "./bootstrap/button-group";
+@import "./bootstrap/input-group";
+@import "./bootstrap/custom-forms";
+@import "./bootstrap/nav";
+@import "./bootstrap/navbar";
+@import "./bootstrap/card";
+@import "./bootstrap/breadcrumb";
+@import "./bootstrap/pagination";
+@import "./bootstrap/badge";
+@import "./bootstrap/alert";
+@import "./bootstrap/progress";
+@import "./bootstrap/media";
+@import "./bootstrap/list-group";
+@import "./bootstrap/close";
+@import "./bootstrap/modal";
+@import "./bootstrap/tooltip";
+@import "./bootstrap/popover";
+@import "./bootstrap/carousel";
+@import "./bootstrap/utilities";
+@import "./bootstrap/print";
+
+// // Extra Components and Utilities and plugins
+@import "./components/components";
+@import "./helper/utilities";
+@import "./plugins/plugins";
+@import "./helper/custom-animation";
+// // Extra Pages
+@import "./backend/pages/pages";
+@import "./backend/layouts/dashboards";
+
+@import "~flatpickr/dist/flatpickr.min.css";
+@import "~node-snackbar/src/sass/snackbar";
+
+// @import "./custom.css";

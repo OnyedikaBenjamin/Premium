@@ -1,0 +1,20 @@
+.choices{
+    &.is-focused.is-open{
+        border: $border-width solid $primary;
+    }
+    .choices__inner{
+        border: $border-width solid $border-color;
+    }
+    .choices__list--dropdown .choices__item--selectable.is-highlighted{
+        background-color: rgba(143,159,188,0.1);
+        
+    }
+    .choices__list--dropdown .choices__list{
+        font-size: 14px;
+        color: $body-text;
+    }
+    .choices__list--dropdown{
+        border: $border-width solid $border-color;
+        
+    }
+}

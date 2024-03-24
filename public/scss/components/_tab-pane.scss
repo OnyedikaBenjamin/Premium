@@ -1,0 +1,18 @@
+//tab pane
+
+.tab-nav-pane{
+    li{
+        a{
+            color: $text-muted;            
+        }
+        a{
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+    li .active{
+        color: $blue;
+        border-bottom: 4px solid $blue;
+    }
+}

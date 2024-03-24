@@ -1,0 +1,17 @@
+.iq-fslightbox-img{
+    a{
+        img{
+            &.img-fluid{
+                min-width: 5em;
+                max-width: 30em;
+                width: 100%;
+            }
+        }
+    }
+}
+.fslightbox-full-dimension {
+    width: 75%;
+}
+.fslightbox-nav {
+    width: 75%;
+}

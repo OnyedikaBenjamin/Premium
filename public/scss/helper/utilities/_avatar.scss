@@ -1,0 +1,25 @@
+.avatar {
+    position: relative;
+}
+@each $size,$value in $avatar-size {
+    .avatar-#{$value}{@include avatar($value)}
+}
+.avatar-status {
+    i {
+        font-size: 12px;
+    }
+    position: absolute;
+    bottom: -4px;
+    top: auto;
+    left: auto;
+    right: 4px;
+}
+.avatar-borderd{
+    border: 2px solid;
+    border-color: rgba($primary, 0.2);
+}
+.avatar-rounded {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}

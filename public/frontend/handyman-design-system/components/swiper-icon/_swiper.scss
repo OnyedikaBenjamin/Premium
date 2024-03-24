@@ -1,0 +1,43 @@
+.d-slider1{
+    position: relative;
+    .swiper-button{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        &.swiper-button-next {
+            right:12px;
+            left:auto;
+            top:65px;
+            &:after {
+                content: 'next';
+                font-size:  0.75rem;;
+                color: $body-color;
+            }
+        }
+        &.swiper-button-prev {
+            &:after {
+                content: 'prev';
+                font-size:  0.75rem;;
+                color: $body-color;
+            }
+            right:auto;
+            left:12px;
+            top:65px;
+        }
+    }
+    
+}
+
+
+.hv-100{
+    height: 100vh;
+}
+.banner-item{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    align-items: center;
+}
+.banner-img{
+    position: relative;
+}

@@ -1,0 +1,42 @@
+.datepicker-cell {
+    &:not(.disabled):hover {
+        background: $primary;
+        color: $white;
+    }
+    &.prev,
+    &.next {
+      &:not(.disabled) {
+          font-weight: 500;
+          color: $gray-500;
+      }
+    }
+    &.selected {
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+.datepicker-view{
+    &.datepicker-grid {
+        .datepicker-cell {
+            height: inset;
+        }
+    }
+}
+
+.datepicker-cell{
+    &.range-start {
+        border-radius: 2rem 0 0 2rem;
+    }
+    &.range-end {
+        border-radius: 0 2rem 2rem 0;
+    }
+}
+
+.datepicker-cell.range:not(.disabled):not(.focused):not(.today):hover {
+    background-color: $secondary;
+}
+.datepicker-dropdown{
+    z-index: $zindex-popover;
+}
+.datepicker-input.in-edit:focus, .datepicker-input.in-edit:active {box-shadow: none;}

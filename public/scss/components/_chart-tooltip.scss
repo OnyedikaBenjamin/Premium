@@ -1,0 +1,25 @@
+//Custom chart
+
+.custom-chart{
+    .apexcharts-tooltip{
+        padding: 2px;        
+    border-radius: 4px;
+    box-shadow: none ;
+    }
+    .apexcharts-tooltip.apexcharts-theme-light{
+        border: 0px !important;
+        padding: 6px;
+
+        .apexcharts-tooltip-title {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            background: #ffffff;
+            border-bottom: 1px solid #ddd;
+            margin: 0;
+        }
+        .apexcharts-tooltip-series-group {
+            padding: 6px;
+            padding-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,220 @@
+{
+  "_from": "emoji-picker-element",
+  "_id": "emoji-picker-element@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Zg+8rtr3vXKuAgBXWpSBghHq+I6o7+35N+25MN3P07pUyk07GXJ6B+gKr8ttUo2LZrLDZVoqKOVMzowkNwwZIg==",
+  "_location": "/emoji-picker-element",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "emoji-picker-element",
+    "name": "emoji-picker-element",
+    "escapedName": "emoji-picker-element",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/emoji-picker-element/-/emoji-picker-element-1.3.0.tgz",
+  "_shasum": "d78deba0ebc4b87731bb2c16f7be00ec458d7647",
+  "_spec": "emoji-picker-element",
+  "_where": "/home/chirag/sites/00-dashboard/slacky-dashboard",
+  "author": {
+    "name": "Nolan Lawson",
+    "email": "nolan@nolanlawson.com"
+  },
+  "bugs": {
+    "url": "https://github.com/nolanlawson/emoji-picker-element/issues"
+  },
+  "bundleDependencies": false,
+  "bundlesize": [
+    {
+      "path": "./bundle.js",
+      "maxSize": "41 kB",
+      "compression": "none"
+    },
+    {
+      "path": "./bundle.js",
+      "maxSize": "15 kB",
+      "compression": "brotli"
+    }
+  ],
+  "deprecated": false,
+  "description": "Lightweight emoji picker distributed as a web component",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@peculiar/webcrypto": "^1.1.3",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-replace": "^2.3.4",
+    "@testing-library/dom": "^7.26.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/user-event": "^12.1.8",
+    "babel-jest": "^26.5.2",
+    "blob-util": "^2.0.2",
+    "bundlesize": "^0.18.0",
+    "compression": "^1.7.4",
+    "conventional-changelog-cli": "^2.1.0",
+    "cssnano": "^4.1.10",
+    "emoji-picker-element-data": "^1.0.0",
+    "emojibase-data": "^5.1.1",
+    "express": "^4.17.1",
+    "fake-indexeddb": "^3.1.2",
+    "fetch-mock-jest": "^1.3.0",
+    "flat-color-icons": "^1.1.0",
+    "focus-visible": "^5.2.0",
+    "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "lint-staged": "^10.4.2",
+    "lodash-es": "^4.17.15",
+    "markdown-table": "^2.0.0",
+    "markdown-toc": "^1.2.0",
+    "mkdirp": "^1.0.4",
+    "node-fetch": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.1",
+    "pretty-bytes": "^5.4.1",
+    "puppeteer": "^5.3.1",
+    "recursive-readdir": "^2.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.32.0",
+    "rollup-plugin-analyzer": "^3.3.0",
+    "rollup-plugin-svelte": "^6.1.0",
+    "rollup-plugin-svelte-hot": "^0.11.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.27.0",
+    "standard": "^14.3.4",
+    "string.prototype.replaceall": "^1.0.3",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.18.0",
+    "svelte": "^3.29.4",
+    "svelte-jester": "github:nolanlawson/svelte-jester#auto-preprocess",
+    "svelte-preprocess": "^4.5.2",
+    "svgo": "^1.3.2",
+    "typedoc": "^0.19.2",
+    "typedoc-plugin-markdown": "^2.4.0",
+    "typescript": "^4.0.5"
+  },
+  "files": [
+    "database.js*",
+    "index.js*",
+    "picker.js*",
+    "trimEmojiData.*",
+    "svelte.js*",
+    "*.d.ts"
+  ],
+  "homepage": "https://github.com/nolanlawson/emoji-picker-element#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "keywords": [
+    "emoji",
+    "picker",
+    "IndexedDB",
+    "custom",
+    "element",
+    "web",
+    "component",
+    "svelte"
+  ],
+  "license": "Apache-2.0",
+  "lint-staged": {
+    "*.js": "standard --fix",
+    "*.(css|scss)": "stylelint --fix '**/*.scss'"
+  },
+  "main": "index.js",
+  "module": "index.js",
+  "name": "emoji-picker-element",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolanlawson/emoji-picker-element.git"
+  },
+  "scripts": {
+    "benchmark:bundle": "rollup -c ./test/bundlesize/rollup.config.js",
+    "benchmark:bundlesize": "run-s build:rollup benchmark:bundle benchmark:run-bundlesize",
+    "benchmark:memory": "run-s build:rollup benchmark:bundle && run-p --race benchmark:memory:server benchmark:memory:test",
+    "benchmark:memory:server": "node ./test/memory/server.js",
+    "benchmark:memory:test": "node ./test/memory/test.js",
+    "benchmark:run-bundlesize": "bundlesize",
+    "build": "run-s build:rollup build:css-docs build:i18n-docs build:types build:typedoc build:toc",
+    "build:css-docs": "node ./bin/generateCssDocs",
+    "build:i18n-docs": "node ./bin/generateI18nDocs",
+    "build:rollup": "NODE_ENV=production rollup -c",
+    "build:toc": "node ./bin/generateTOC",
+    "build:typedoc": "typedoc --target ES5 --out docs-tmp --theme markdown --excludePrivate --excludeNotExported --hideSources --hideBreadcrumbs ./src/types && node ./bin/generateTypeDocs && rm -fr docs-tmp",
+    "build:types": "tsc --target ES5 -d --outDir ./ts-tmp ./src/types/*.ts && mv ./ts-tmp/*.d.ts ./ && rm -fr ts-tmp",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "cover": "jest --coverage",
+    "dev": "run-p --race dev:rollup dev:server",
+    "dev:rollup": "NODE_ENV=development rollup -c -w",
+    "dev:server": "node ./test/adhoc/server.js",
+    "docs": "node bin/processCustomEmoji.js",
+    "lint": "standard && stylelint '**/*.scss'",
+    "lint:fix": "standard --fix && stylelint --fix '**/*.scss'",
+    "prepare": "run-s build",
+    "test": "jest",
+    "test:adhoc": "node ./test/adhoc/server.js",
+    "test:leak": "run-s build:rollup && run-p --race test:leak:server test:leak:test",
+    "test:leak:server": "node ./test/leak/server.js",
+    "test:leak:test": "node ./test/leak/test.js",
+    "version": "run-s changelog docs && git add CHANGELOG.md docs"
+  },
+  "standard": {
+    "ignore": [
+      "/database.js",
+      "/index.js",
+      "/picker.js",
+      "/trimEmojiData.js",
+      "/trimEmojiData.cjs",
+      "/svelte.js",
+      "/docs"
+    ],
+    "global": [
+      "btoa",
+      "crypto",
+      "customElements",
+      "CustomEvent",
+      "fetch",
+      "getComputedStyle",
+      "indexedDB",
+      "IDBKeyRange",
+      "matchMedia",
+      "performance",
+      "ResizeObserver",
+      "Response",
+      "requestAnimationFrame",
+      "requestIdleCallback",
+      "test",
+      "expect",
+      "jest",
+      "beforeAll",
+      "afterAll",
+      "beforeEach",
+      "afterEach",
+      "describe"
+    ]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended-scss",
+    "rules": {
+      "selector-type-no-unknown": [
+        true,
+        {
+          "ignoreTypes": [
+            "emoji-picker"
+          ]
+        }
+      ]
+    }
+  },
+  "type": "module",
+  "types": "index.d.ts",
+  "version": "1.3.0"
+}

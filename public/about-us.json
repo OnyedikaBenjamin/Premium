@@ -1,0 +1,44 @@
+{
+    "sectione":{
+        "title":"A whole world of services at your door step",
+        "sub_title" :"The best for every budget",
+        "text":"The best for every budget Amet minim mollit n deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+        "image_one": "about-1.png",
+        "image_two": "about-2.png",
+        "card" :{
+            "counter": "1548",
+            "text":"Gave Services Across The Cities And World"
+        }
+    },
+    "sectionTwo":{
+        "title" : "Experience in Number",
+        "text" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less rmal distribution of letters.",
+        "card":{
+            "count1" :"250+",
+            "value1" :"Authorized Team",
+            "count2" :"90+",
+            "value2" :"Service Cities",
+            "count3" :"1400+",
+            "value3" :"Happy Customers"
+        },
+        "goal_to_achieve":{
+            "title":"Goal to Achieve",
+            "text":"Amet minim mollit n deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+            "checklist":[
+                "Amet minim mollit n deserunt",
+                "Amet minim mollit n deserunt",
+                "Amet minim mollit n deserunt"
+            ],
+            "image" : "about-bg.png"
+        }
+    },
+    "sectionFour":{
+        "title":"Meet Our leaders",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+    },
+    "sectionSix":{
+        "title": "Subscribe to our newsletter",
+        "text" : "Subscribe to the newsletter to receive exclusive offers, latest news, and updates",
+        "buttontext" : "Subscribe"
+    }
+}

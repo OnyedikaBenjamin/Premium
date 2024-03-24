@@ -1,0 +1,147 @@
+.board-content{
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+}
+.list-item, .board-item{
+	min-width: 33.3%;
+	>.card{
+		margin-bottom: 20px;
+		.card-body{
+			padding: 10px 20px ;
+		}
+	}
+	.item-title{
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.draggable-item{
+		&.gu-transit{
+			opacity: 0.8 !important;
+		}
+		cursor: pointer;
+		border: $border-width solid $border-color;
+		border-radius: $border-radius;
+		padding: 25px;
+		margin-bottom: 20px;
+		background: $card-bg;
+		&:hover {
+			background: darken($card-bg, 2%);
+		}
+	}
+}
+.list-item {
+	.draggable-item {
+		border-left: 4px solid;
+	}
+}
+.board-item {
+	.draggable-item {
+		border-left: 4px solid;
+	}
+}
+.dark {
+	.list-item, .board-item {
+		.draggable-item {
+			border: $border-width solid $dark-border-color;
+			border-left: 4px solid;
+			background: $dark-card-bg;
+		}
+	}
+}
+.todo-board-card {
+	.item-body {
+		display: flex;
+		justify-content: space-between;
+		// align-items: center;
+	}
+	.item-footer {
+		margin-top: 15px;
+		display: none;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: var(--animate-duration);
+		animation-duration: var(--animate-duration);
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		-webkit-animation-name: fadeOut;
+		animation-name: fadeOut;
+	}
+	&:hover {
+		.item-footer {
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+			display: block;
+		}
+	}
+}
+.todo-list-card{
+	.item-body {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		p {
+			font-size: 14px;
+		}
+	}
+	.action-list {
+		display: flex;
+		flex: 1;
+		margin-left: 20px;
+	}
+	.action-list {
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-duration: var(--animate-duration);
+		animation-duration: var(--animate-duration);
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+		opacity: 0;
+	}
+	&:hover {
+		.action-list {
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+		}
+	}
+}
+.board-item{
+	padding: 0 10px;
+	&:first-child{
+		padding-right: 10px;
+		padding-left: 0;
+	}
+	&:last-child{
+		padding-right: 0;
+		padding-left: 10px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+@media (max-width: 992px) {
+	.list-item, .board-item{
+		min-width: 34%;
+	}
+}
+@media (max-width: 768px) {
+	.list-item, .board-item{
+		min-width: 51%;
+	}
+}

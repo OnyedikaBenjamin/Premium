@@ -1,0 +1,31 @@
+//active project
+
+.active-project{
+        .data-content{
+            margin-left: 12px;
+            line-height: 1.4;
+
+            span , p{
+                display: block;
+            }
+        }
+
+        .h-avatar {
+            position: relative;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .h-avatar.is-medium{
+            .avatar.is-squared {
+                border-radius: 12px;
+            }
+        } 
+        .h-avatar.is-medium{
+            .avatar {
+                width: 50px;
+                min-width: 50px;
+                height: 50px;
+            }
+        } 
+}

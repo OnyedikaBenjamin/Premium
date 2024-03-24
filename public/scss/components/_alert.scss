@@ -1,0 +1,65 @@
+
+.alert {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	&.bg-white{
+		border-width: 2px;
+	}
+	.iq-alert-icon {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 0 1.30rem 0 0;
+		i {
+			font-size: 2.441em;
+			line-height: normal;
+		}
+	}
+	.iq-alert-text {
+		-ms-flex-item-align: center;
+		align-self: center;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+	}
+	.close {
+		float: right;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1;
+		color: $white;
+		text-shadow: none;
+		opacity: 1;
+	}
+}
+.close {
+	&:not(:disabled) {
+		&:not(.disabled) {
+			&:focus {
+				outline: none;
+			}
+			&:hover {
+				outline: none;
+			}
+		}
+	}
+}
+
+.dark {
+	@each $color, $value in $theme-colors {
+		.alert-#{$color} {
+		  @include alert-variant(rgba(theme-color-level($color, 0), 0.2), theme-color-level($color, $alert-border-level), theme-color-level($color, 0));
+		  &.bg-white{
+			  background-color: $dark-card-bg!important;
+			  color: $light !important;
+		  }
+		}
+	}
+}

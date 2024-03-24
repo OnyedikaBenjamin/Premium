@@ -1,0 +1,111 @@
+body:not(.dark){
+    .sidebar-light{
+        background-color: $white;
+        .sidebar-light-img{
+            display: block !important;
+        }
+        .light-logo{
+            display: none;
+        }
+         .iq-sidebar-menu{
+            .side-menu{
+                >li{
+                    &:hover {
+                        >.svg-icon {
+                            >i {
+                                >svg {
+                                    stroke: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+                li{
+                    a{
+                        &:hover{
+                            background-color: rgba($primary,0.08);
+                            color:black;
+                        }
+                        
+                    }
+                } 
+            } 
+        }
+        .iq-sidebar-menu{
+            .side-menu{
+                >li{
+                    // ul {
+                    // 	a {
+                    // 		i {
+                    // 			>svg {
+                    //                 &:hover{
+                    // 				stroke: $black;
+                    //                 }
+                    // 			}
+                    // 		}
+                    // 	}
+                    // }
+                    &.active{
+                        &>a{
+                            color: $black;
+                            text-decoration: none;
+                            background-color: rgba($primary,0.08);
+                        }
+                    }
+                    ul{
+                        a{
+                          &:hover{
+                            color:$black;
+                            text-decoration: none;
+                            background-color: rgba($primary,0.08);
+                          }  
+                        }
+                    }
+                }
+            }
+        }
+        .iq-sidebar-menu{
+            .submenu{
+                &>li{
+                    &:hover{
+                        >.svg-icon{
+                            &>i{
+                                &>svg{
+                                    stroke: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    
+        .iq-sidebar-menu {
+            .side-menu{
+                &>li.active{
+                    &>.svg-icon{
+                        &>i{
+                            &>svg{
+                                stroke: $black;
+                
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    
+        .iq-sidebar-logo{
+            a{
+                span{
+                    color:$black !important;
+                }
+            }
+    
+        } 
+    }
+}
+
+
+

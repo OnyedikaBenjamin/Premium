@@ -1,0 +1,206 @@
+
+/* Make Select2 boxes heights: */
+.select2-selection__rendered {
+    line-height: 40px !important;
+}
+
+.select2-container .select2-selection--multiple {
+    min-height: 44px;
+}
+.select2-container .select2-selection--multiple .select2-selection__rendered{
+    display: inline-block;
+    overflow: visible;
+    text-overflow: unset;
+    white-space: normal;
+    list-style: none;
+    padding: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 44px;
+}
+
+.select2-container .select2-selection--single {height: 46px!important;}
+.select2-container--default .select2-selection--single .select2-selection__rendered {line-height: 40px!important;}
+.select2-container--default .select2-selection--single .select2-selection__arrow {  height: 40px!important;}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #e0e0e0!important;
+}
+.select2-container--default .select2-selection--single {
+   border: 1px solid #e0e0e0!important;
+}
+
+/* .select2-container--default .select2-selection--multiple {
+   border: 1px solid #e0e0e0!important;
+} */
+.select2-container .select2-search--inline .select2-search__field {
+   margin-top: -2px!important;
+   color:#2c3e50;
+   padding-left: 12px!important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color:#209EA4;
+}
+.select2-container {width: 100%!important;}
+
+.pr-10 {
+    padding: 0 0 0 10px;
+}
+
+.attachment-image {
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.attachment-file {
+    height: 80px;
+    width: 50%;
+}
+
+.remove-file {
+    position: absolute;
+    top: 0;
+}
+
+.notification_tag {
+    background: #e3342f;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    line-height: normal;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+}
+
+.nav-item span.count-mail {
+    height: 22px !important;
+    width: 22px !important;
+    font-size: 12px;
+    line-height: 20px !important;
+    right: 0px;
+    top: 10px;
+    justify-content: center;
+}
+
+h6 .notification_count {font-weight: 400;}
+
+.notification-height {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 325px;
+}
+
+.iq-top-navbar .notification-menu {
+    min-width: 450px;
+}
+
+.border-left-2 {
+    border-left: 2px solid #dec3c3 !important;
+}
+
+.notify-list-bg
+{
+    background : #ecf0f5
+}
+
+.dark .notify-list-bg
+{
+    background : #222222;
+}
+/* .service-table td, .table th{
+    padding: 17px 8px !important;
+  
+}
+.payment-table td, .table th{
+    padding: 17px 8px !important;
+}
+.service-table td {
+    text-align: center !important;
+} */
+.card-body.activity-height{
+    max-height: 368px !important;
+    overflow-x : hidden !important;
+}
+.text-green-600 {
+    color: rgba(5, 150, 105, 1);
+}
+.data-not-found{
+    text-align: center;
+    margin: 100px auto;
+    float: none;
+    bottom: 10px;
+}
+.nav-fill .nav-item {
+    text-align: left;
+}
+.dark-mode-trashed {
+    background-color:hsla(0,0%,100%,.08) !important;
+}
+.light-mode-trashed {
+    background-color:rgb(229 234 239) !important;
+}
+.dark .select2-container--default .select2-selection--single {
+    background: #222 !important;
+    border-color: #252525 !important;
+}
+
+.dark .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff !important;
+}
+
+.dark .select2-search.select2-search--dropdown {
+    background: #252525 !important;
+}
+
+.dark .select2-container--default .select2-search--dropdown .select2-search__field {
+    background: #252525 !important;
+    color: #fff !important;
+}
+.dark .select2-container--open .select2-dropdown--below {
+    border-color: #252525;
+}
+
+.profile-card h3 {
+    position: relative;
+    z-index: 9;
+}
+/* .table-fixed tbody {
+    height: 50vh !important;
+    overflow-y: auto !important;
+    width: 100% !important;
+} */
+
+.iq-top-navbar .language-dropdown-menu ul {
+    max-height: 376px;
+    overflow: scroll;
+}
+.lang_table tbody {
+    display: block;
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+  
+  .lang_table thead, .lang_table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .d-none{
+      display: none !important;
+  }
+
+  @media (max-width: 480px){
+    .nav .search-content {
+        width: 100%;
+        position: fixed;
+        top: 78px;
+    }
+    .nav .search-content form {
+        margin: 0 1em;
+    }
+  }

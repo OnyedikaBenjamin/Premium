@@ -1,0 +1,206 @@
+.card-body.service-card{
+    z-index:1;
+}
+
+.service-content-part .header-title-inner-page{
+    margin-top: 0;
+}
+.service-review-data .header-title-inner-page{
+    margin-bottom: 0;
+}
+.our-offer .offerSlider .offer-box .offer-image .offer-disc{
+    bottom: 75px;
+    left: 100px;
+}
+.provider-box a h5 {
+    transition:  all .5s ease-in-out;
+}
+.provider-box a:hover h5 {
+    color: #51529d;
+}
+
+[dir="rtl"] .nav .header-address{
+    margin-left: 15px;
+    margin-right: 0;
+  }
+[dir="rtl"] header .header-buttons .btn{
+    margin-left: 0; 
+    margin-right: 15px;
+  }
+[dir="rtl"]  .nav .top-menu .nav-item:first-child {
+    padding-left: 0;
+}
+[dir="rtl"] .our-offer .offerSlider .offer-box .offer-info{
+    padding: 50px 40px 50px 0;
+}
+[dir="rtl"] .our-offer .offerSlider .offer-box .offer-image img{
+    clip-path: circle(64.4% at 11% 30%);
+}
+[dir="rtl"] .our-customer-slider .customer-testimonial .tesimonial-text {
+    padding-left: 0;
+    padding-right: 30px;
+}
+[dir="rtl"] .our-free-service .free-serv::before{
+    left: 0;
+    right: auto;
+}
+[dir="rtl"] .social_icon li:last-child a {
+    margin-right: 6px;
+}
+[dir="rtl"] .social_icon li:first-child a {
+    margin-right: 0;
+}
+[dir="rtl"] ul{
+    padding:0;
+}
+[dir="rtl"] .our-offer .offerSlider .offer-box .offer-info{
+    align-items: flex-start;
+}
+[dir="rtl"] .footer .footer-information .footer-details .hr-vertial{
+    margin: 1.1rem;
+}
+[dir="rtl"] .ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
+[dir="rtl"] .ps-2 {
+    padding-right: 0.5rem !important;
+    padding-left: 0 !important;
+}
+[dir="rtl"] .me-3 {
+    margin-left: 1rem !important;
+    margin-right: 0 !important;
+}
+[dir="rtl"] .service-main .service-meta ul li {
+    padding-left: 30px;
+    padding-right: 0;
+}
+[dir="rtl"] .service-heading-box .price {
+    padding-left: 0;
+    padding-right: 0.5rem;
+}
+[dir="rtl"] .service-review-data .review-details .review-card .autho-detail .review-date{
+    text-align: left;
+}
+[dir="rtl"] .service-review-data .review-details .review-card .card-details {
+    padding-left: 40px;
+    padding-right: 0;
+}
+[dir="rtl"] .icon-box-wrapper .icon-content {
+    padding-left: 0;
+    padding-right: 30px;
+}
+[dir="rtl"] .our-offer .offerSlider .offer-box .offer-image .offer-disc{
+    bottom: 10px;
+    left: 100px;
+}
+[dir="rtl"] .login-psw input[type="password"],
+[dir="rtl"] .login-psw input[type="text"]{
+    padding-right: 45px;
+}
+
+@media(min-width:1200px){
+    [dir="rtl"] .our-offer .offer-box .offer-info .main-title{
+        left: auto;
+        right:40px;
+    }
+}
+
+@media(max-width:1199px){
+    [dir=rtl] .our-offer .offerSlider .offer-box .offer-info {
+        padding: 50px 40px 50px 40px;
+    }
+    [dir=rtl] .navbar-toggler{
+        margin-left: 0;
+    }
+    [dir=rtl] .nav .navbar-toggler .navbar-toggler-icon{
+        padding: 0 0 0 10px; 
+    }
+    [dir=rtl] .nav .search-device-sm .search-content{
+        left:0;
+        right:auto;
+    }
+    [dir=rtl] header #user-menu-dropdown{
+        right: auto;
+        left:0;
+    }
+    .our-offer .offerSlider .offer-box .offer-image .offer-disc {
+        bottom: 35px;
+        left: 80px;
+    }
+}
+
+@media(max-width:1024px){
+    .padding-bot{
+        padding-bottom: 70px;
+    }
+    .padding-top{
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:991px){
+    .service-heading-part .service-heading-box .service-meta{
+        align-items: center;
+        justify-content: center;
+    }
+    .service-heading-part .service-heading-box .service-main .service-meta ul li,
+    [dir="rtl"] .service-main .service-meta ul li  {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .service-heading-part .service-heading-box .service-meta ul li span{
+        margin: auto;
+    }
+    .service-detail .service-heading-part .service-heading-box .service-title{
+        justify-content: center;
+        text-align: center;
+    }
+    [dir=rtl] .our-offer .offerSlider .offer-box .offer-image .offer-disc {
+        bottom: 30px;
+    }
+}
+
+@media(max-width:767px){
+    .padding-bot{
+        padding-bottom: 50px;
+    }
+    .padding-top{
+        padding-top: 50px;
+    }
+    [dir="rtl"] .service-review-data .review-details .review-card .author-wrapper .autho-detail .autho-title .review-date{
+        text-align: right;
+    }
+    [dir="rtl"] .our-customer-slider .customer-testimonial .tesimonial-image{
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    [dir=rtl] .our-offer .offerSlider .offer-box .offer-image img {
+        clip-path: circle(60.4% at 11% 30%);
+    }
+    [dir=rtl] .our-offer .offerSlider .offer-box .offer-image .offer-disc {
+        bottom: 0;
+    }
+}
+
+@media(max-width:479px){
+    [dir=rtl] .icon-box-wrapper .icon-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    [dir=rtl] .our-customer-slider .customer-testimonial .tesimonial-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    [dir=rtl] .our-offer .offerSlider .offer-box .offer-image .offer-disc {
+        bottom: 10px;
+    }
+}
+
+@media(max-width:360px){
+    .our-offer .offerSlider .offer-box .offer-image .offer-disc {
+        bottom: 0;
+        left: 80px;
+    }
+}

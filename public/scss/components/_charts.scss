@@ -1,0 +1,42 @@
+
+.apexcharts-legend.position-bottom .apexcharts-legend-series, foreignObject{
+    // display: none !important;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+    z-index: 2;
+}
+
+@media (max-width: 1024px){
+	#chart-map-column-04{
+		height: 385px !important;
+	}
+	#chart-apex-column-02{
+		height: 150px !important;
+	}
+	#chart-apex-column-03{
+		height: 300px !important;
+	}
+}
+
+@media (max-width: 768px){
+	#chart-apex-column-02{
+		height: 205px !important;
+	}
+}
+
+#chart-map-column-04{
+	height: 400px;
+}
+
+#chart-apex-column-02{
+	height: 50px;
+}
+
+#chart-apex-column-03{
+	height: 300px;
+}
+
+#chart-apex-column-01{
+	height: 280px
+}

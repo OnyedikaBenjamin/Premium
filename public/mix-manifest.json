@@ -1,0 +1,7 @@
+{
+    "/js/frontend.min.js": "/js/frontend.min.js",
+    "/js/backend-bundle.min.js": "/js/backend-bundle.min.js",
+    "/css/frontend.min.css": "/css/frontend.min.css",
+    "/css/backend-bundle.min.css": "/css/backend-bundle.min.css",
+    "/css/backend.css": "/css/backend.css"
+}

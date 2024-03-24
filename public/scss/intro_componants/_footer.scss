@@ -1,0 +1,37 @@
+footer{
+    .footer-content {
+        position: relative;
+        overflow: hidden;
+        background-size: cover;
+        background: $primary;
+        padding: 100px 0;
+    }
+    
+    .footer-text {
+        text-align: center;
+        .footer-sub-text {
+            font-weight: 400;
+            color: $white;
+        }
+        ul {
+            li {
+                margin-right: 15px;
+                i {
+                    font-size: 22px;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.purchase-btn {
+    > img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+// #my_audio{
+//     display:none;
+// }
+

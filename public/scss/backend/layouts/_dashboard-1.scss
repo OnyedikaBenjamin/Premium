@@ -1,0 +1,378 @@
+#layout-1-chart-04 {
+	height: 400px;
+}
+#layout-1-chart-01{
+	min-height: 300px !important;
+}
+#layout-1-chart-06{
+	min-height: 310px !important;
+}
+#layout-1-chart-03{
+	min-height: 350px !important;
+	.apexcharts-legend{
+		inset: auto 0px 0px !important;
+	}
+}
+#layout-1-chart-05{
+	min-height: 350px !important;
+}
+
+.iq-details {
+	.iq-progress-bar {
+		height: 10px;
+		padding: 3px;
+	}
+}
+.iq-icon-box-2 {
+	height: 55px;
+	width: 55px;
+	line-height: 55px;
+	text-align: center;
+	margin-right: 10px;
+	font-size: 26px;
+}
+.reporting-table.table.table-borderless {
+	thead {
+		th {
+			border-bottom: 1px solid $gray-dark1;
+		}
+	}
+}
+.reporting_table {
+	tbody {
+		tr {
+			border-bottom: 10px solid $white;
+			background-color:$body-bg;
+		}
+		td {
+			background-color: transparent;
+			border: 0px solid transparent;
+		}
+	}
+}
+#layout-1-chart-06{
+    .apexcharts-legend{
+        margin-top: -10px !important;
+        inset: auto 0px 0px !important;
+    }
+}
+
+.progress.progress-round.conversation-bar {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	.progress-value {
+		font-size: 16px;
+		left: 32px;
+		text-align: center;
+	}
+}
+
+// content design
+.ecommerce-chart-03 {
+	margin: 0 auto;
+	display: block;
+}
+.iq-selling-box {
+	position: absolute;
+	bottom: 0;
+}
+.w-80 {
+	width: 80% !important;
+}
+.iq-progress-height {
+	.iq-progress-bar {
+		height: 10px;
+	}
+}
+.progress {
+	background-color:$light;
+}
+tr.iq-product-border {
+	border-bottom: 1px solid $light;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+.ecommerce-social {
+	li {
+		display: inline-block;
+	}
+}
+.ecommerce-avtar {
+	text-align: center;
+	margin-top: -60px;
+	img {
+		border: 8px solid;
+		@if $enable-rounded == true {
+            @include radius-mixin($border-radius-circle);
+        }
+	}
+}
+.ecommerce-profile {
+	li {
+		display: inline-block;
+	}
+}
+
+.progress-bar.rounded-right {
+	&:before {
+		content: "";
+		height: 10px;
+		width: 10px;
+		@if $enable-rounded == true {
+            @include radius-mixin($border-radius-circle);
+        }
+		position: absolute;
+		left: -5px;
+		top: 0px;
+		background: #e9ecef;
+	}
+}
+.avatar-15 {
+	height: 15px;
+	width: 15px;
+}
+.light-font-overlay {
+    font-size: 100px;
+    line-height: 80px;
+    font-weight: 700;
+    color: $body-bg;
+    margin-right: -20px;
+}
+
+/* charts */
+#ecommerce-chart-01 {
+    min-height: 300px;
+}
+#ecommerce-chart-03 {
+	height: 250px;
+}
+#ethernet-chart-03 {
+	.apexcharts-canvas {
+		margin: 0 auto;
+	}
+}
+#ecommerce-chart-02 {
+	.apexcharts-canvas {
+		left: 50%;
+    	transform: translateX(-50%);
+		margin-top: -30px;
+	}
+}
+.mathew-icon {
+	.font-icon {
+		font-size: 35px;
+	}
+	.font-icon.f-small{font-size: 33px;}
+}
+
+@media (min-width:1300px) and (max-width:1500px){
+	.mathew-icon {
+		padding: 20px 10px;
+	.font-icon {
+		font-size: 25px;
+	}
+}
+
+}
+@media (min-width: 1300px){
+    body.iq-saidbar-primary.sidebar-main {
+	.iq-sidebar-menu {
+		.side-menu {
+			li {
+				ul {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+}
+
+@media(max-width: 766px){
+	h4.font-weight-bold{
+		margin-bottom: .625rem;
+	}
+	
+}
+
+@media(max-width: 1299px){
+	.iq-saidbar-primary {
+	.wrapper-menu {
+		color: $primary;
+	}
+}
+.mathew-icon {
+	padding: 20px 0px;
+	.font-icon {
+		font-size: 25px;
+	}
+}
+}
+
+@media (min-width: 992px) and (max-width:1024px){
+	.iq-saidbar-primary{
+		.iq-search-bar{
+			.searchbox {
+				width: 280px;
+			}	
+		}
+	}	
+}
+
+
+@media (max-width: 991px){
+	.iq-saidbar-primary{
+		.content-page {
+    		padding: 90px 0 0;
+		}
+	}	
+}
+
+
+.data-indicator {
+	.status {
+		margin-top: -33px;
+		display: block;
+		margin-right: -60px;
+	}
+}
+
+.event-icon.icon {
+	line-height: 22px;
+    padding-top: 10px;
+    @if $enable-rounded == true {
+        @include radius-mixin($border-radius-normal);
+    }
+}
+.event-info {
+	flex: 1;
+}
+
+//my team
+
+.user-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+// Dashboard 
+.card.total-booking-card {
+    background: linear-gradient(180deg,rgba(59,177,4,0.95) 0%,rgba(54,169,0,0.95) 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+	&::after{
+		position: absolute;
+		inset-inline-start: 0;
+		inset-block-end: 0;
+		background-color:$white;
+		opacity: 0.2;
+		content: "";
+		block-size: 100%;
+		inline-size: 8.125rem;
+		z-index: -1;
+		border-end-end-radius: 100%;
+	}
+}
+h4.booking-text , p.booking-text,
+a.booking-text{
+	color: $white;
+	font-weight: 500;
+}
+.card.total-service-card{
+	background:linear-gradient(180deg,rgba(5,89,221,0.9) 0%,#3577DE 100%);
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+	opacity: 0.9;
+	&::after{
+		position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    background-color:$white;
+    opacity: 0.2;
+    content: "";
+    block-size: 100%;
+    inline-size: 8.125rem;
+    z-index: -1;
+    border-end-end-radius: 100%;
+	}
+}
+.card.total-provider-card{
+	background: linear-gradient(180deg,#FF9900 0%,#F48E2F 100%);
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+	opacity: 0.9;
+	&::after{
+		position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    background-color:$white;
+    opacity: 0.2;
+    content: "";
+    block-size: 100%;
+    inline-size: 8.125rem;
+    z-index: -1;
+    border-end-end-radius: 100%;
+	}
+}
+.card.total-revenue{
+	background: linear-gradient(180deg,#223DCA 0%,#2542DA 100%);
+	position: relative;
+    z-index: 1;
+    overflow: hidden;
+	opacity: 0.9;
+	&::after{
+		position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    background-color:$white;
+    opacity: 0.2;
+    content: "";
+    block-size: 100%;
+    inline-size: 8.125rem;
+    z-index: -1;
+    border-end-end-radius: 100%;
+	}
+}
+.data-content {
+    font-size: 13px; 
+}
+.btn-link {
+    padding: 0;
+    font-size: .875rem;
+    font-weight:500;
+	text-decoration: underline;
+}
+a.btn-link-hover:hover{
+color: #ea5920;
+}
+.common-list li {
+    position: relative;
+    padding: 0.625rem 0;
+    cursor: pointer;
+	color: $primary;
+}
+.common-list li h6 {
+    font-weight:bold;
+    color: #758590;
+    // -webkit-margin-after: 0.3125rem;
+    margin-block-end: 0.3125rem;
+}
+.badge-primary {
+    background-color: rgba(65,83,179,.1);
+    color: #4153b3;
+}
+.badge-secondary {
+	color: #fff !important;
+    background-color: #1df8006e;
+}
+.badge-danger {
+    background-color: rgba(255,55,55,.1);
+    color: #ff3737 !important; 
+}

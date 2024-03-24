@@ -1,0 +1,23 @@
+@mixin chartListVarient($color, $value) {
+    .ct-series-#{$color} {
+        .ct-bar{
+            stroke: $value;
+        }
+        .ct-line{
+            stroke: $value;
+        }
+        .ct-point {
+            stroke: darken($value, 10%);
+        }
+        .ct-slice-donut{
+            stroke: $value;
+        }
+    }
+    .ct-donut .ct-label {
+        fill: rgba(240, 238, 238, 0.911);
+        color: rgba(236, 235, 235, 0.911);
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+    
+}

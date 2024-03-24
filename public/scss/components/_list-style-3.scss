@@ -1,0 +1,46 @@
+//my team
+
+.list-style-3{
+    list-style-type: none;
+    padding: 0;
+
+    .list-item {
+        .list-style-action a{
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            color: #cecfda;
+            font-size: .9rem;
+            transition: all .3s;
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .list-style-action{
+            a:hover{
+                color: #a2a5b9;
+                background: #f5f5f5;
+            }
+        } 
+        .avatar{
+            .avatar-img{            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        } 
+
+        @each $key, $value in $list-colors {
+            .avatar .avatar-#{$key}
+            {
+                background: lighten($value,10%);
+                span{
+                    color: darken($value,20%);
+                }
+            }
+        }
+    }
+}

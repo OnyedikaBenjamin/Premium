@@ -1,0 +1,19 @@
+text {
+    font-family: $font-family-title !important;
+}
+
+.ct-chart-line .ct-label, .ct-chart-bar .ct-label {
+  width: 15px !important;
+  margin-right: 0 !important
+}
+.ct-horizontal  {
+  margin-top: 10px !important;
+}
+foreignObject {
+  width: 10px !important;
+}
+// Chart List Js Plugin
+
+@each $color, $value in $chart-colors {
+  @include chartListVarient($color, $value);
+}

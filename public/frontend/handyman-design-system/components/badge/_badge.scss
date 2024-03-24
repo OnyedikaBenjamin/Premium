@@ -1,0 +1,17 @@
+
+    .badge-position{
+        position: unset !important;
+    }
+
+
+    .content-height{
+        height: 2rem;
+    }
+        .para-ellipsis{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        
+    }

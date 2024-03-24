@@ -1,0 +1,68 @@
+.login-content {
+	position: relative;
+	height: 100vh;
+	z-index: 99;
+	.floating-label {
+		label {
+			color: $body-text;
+			font-size: 14px;
+			font-weight: 400;
+			position: absolute;
+			pointer-events: none;
+			left: 12px;
+			top: 50%;
+			@include transform-mixin( translateY(-50%));
+			@if $enable-transitions == true {
+				@include transition-mixin(all 0.3s ease-in-out);
+			}
+		}
+	}
+	.form-control {
+		&:focus {
+			border-color: $primary;
+		}
+		border-color: $light;
+	}
+	.custom-control-label {
+		&::before {
+			background-color: $body-bg;
+		}
+	}
+
+	.card{
+		margin-top: 30px;
+	}
+}
+@media (min-width:992px) {
+	.lb-img{
+    position:absolute;
+    bottom:0;
+    left:0;    
+    width:213px;
+	}
+	.rb-img{
+		position:absolute;
+		bottom:0;
+		right:0;    
+		width:194px;
+	}
+	.cnf-mail{width:80%;}
+}
+
+@media (max-width:991px){
+	.lb-img {
+	display: none;
+}
+.rb-img {
+	display: none;
+}
+
+}
+.auth-logo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.5rem;
+	img {
+		height: 60px;
+	}
+}

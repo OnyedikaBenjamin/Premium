@@ -1,0 +1,19 @@
+@each $color, $value in $colors {
+	.border-color-#{$color} { border-color: $value !important; }
+}
+
+@each $color, $value in $colors {
+	.border-color-top-#{$color} { border-top-color: $value !important; }
+}
+
+@each $color, $value in $colors {
+	.border-color-bottom-#{$color} { border-bottom-color: $value !important; }
+}
+
+@each $color, $value in $colors {
+	.border-color-left-#{$color} { border-left-color: $value !important; }
+}
+
+@each $color, $value in $colors {
+	.border-color-right-#{$color} { border-right-color: $value !important; }
+}

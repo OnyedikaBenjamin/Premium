@@ -1,0 +1,17 @@
+.btn-group {
+    .btn {
+        &:not(:disabled):not(.disabled) {
+            cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+        
+            &:active,
+            &.active {
+                background: rgba($component-active-bg, .1);
+                color: $component-active-bg;
+        
+                &:focus {
+                @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+                }
+            }
+        }
+    }
+}

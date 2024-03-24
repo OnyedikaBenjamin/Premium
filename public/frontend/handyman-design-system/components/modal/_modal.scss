@@ -1,0 +1,37 @@
+.modal-footer {
+    padding: $modal-inner-padding * .5;
+    display: none;
+}
+.modal-open {
+    overflow:hidden;
+}
+.modal-backdrop{
+    opacity: 0.7;
+}
+
+.close{
+    border: none;
+    background: none;
+    font-size: 30px;
+}
+
+.vue-star-rating-star{
+    height: 20px;
+    width: 20px;
+    margin-left: 0.5rem;
+}
+.vue-star-rating-rating-text{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.review{
+    border: 1px solid #EDEDED;
+    background: #f8f9fa;
+    .review-rating-star{
+    
+            height: 10px;
+        
+    }
+}
+

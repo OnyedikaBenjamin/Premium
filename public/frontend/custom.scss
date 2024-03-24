@@ -1,0 +1,27 @@
+/*!
+* Version: 1.1.0
+* Template: Example Project
+* Author: iqonic.design
+* Design and Developed by: iqonic.design
+* NOTE: This file contains the styling for Template.
+*
+*/
+
+// Configuration
+@import "./bootstrap/functions";
+// Variables
+@import "./handyman-design-system/variable";
+@import "./handyman-design-system/variables/index";
+@import "./bootstrap/variables";
+
+@import "./bootstrap/mixins";
+
+// Hope Ui Design System Mixin And Helper
+@import "./handyman-design-system/helper/functions";
+@import "./handyman-design-system/helper/mixins";
+@import "./handyman-design-system/helper/reboot";
+
+@import "./custom/auth/authentication";
+@import "./custom/kanban/kanban";
+@import "./custom/pricing/pricing";
+@import "./custom/ui-kit/ui-kit";

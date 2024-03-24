@@ -1,0 +1,151 @@
+// svg transition
+
+.style-1{    
+    transition: .3s ease;
+    width: 10px; height:10px;
+    -webkit-animation: shrink 1s linear 0s infinite alternate;
+    -moz-animation: shrink 1s linear 0s infinite alternate;
+    -ms-animation: shrink 1s linear 0s infinite alternate;
+    -o-animation: shrink 1s linear 0s infinite alternate;
+    animation: shrink 1s linear 0s infinite alternate;
+}
+
+
+@-webkit-keyframes shrink {
+    0% {
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    100% {
+      -moz-transform: scale(.95, 1);
+      -o-transform: scale(.95, 1);
+      -ms-transform: scale(.95, 1);
+      -webkit-transform: scale(.95, 1);
+      transform: scale(.95, 1);
+    }
+  }
+
+  .style-2{
+  transition: .3s ease;
+    width: 10px; height:10px;
+    -webkit-animation: shrink1 1s linear 0s infinite alternate;
+    -moz-animation: shrink1 1s linear 0s infinite alternate;
+    -ms-animation: shrink1 1s linear 0s infinite alternate;
+    -o-animation: shrink1 1s linear 0s infinite alternate;
+    animation: shrink1 1s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes shrink1 {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
+
+.style-3{
+  transition: .3s ease;
+    width: 10px; height:10px;
+    -webkit-animation: shrink2 1s linear 0s infinite alternate;
+    -moz-animation: shrink2 1s linear 0s infinite alternate;
+    -ms-animation: shrink2 1s linear 0s infinite alternate;
+    -o-animation: shrink2 1s linear 0s infinite alternate;
+    animation: shrink2 1s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes shrink2 {
+  0% {
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale3d(4%);
+  }
+  100% {
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale3d(2%);
+  }
+}
+
+.style-4{
+    transition: .3s ease;
+    width: 10px; height:10px;
+    -webkit-animation: shrink3 1s linear 0s infinite alternate;
+    -moz-animation: shrink3 1s linear 0s infinite alternate;
+    -ms-animation: shrink3 1s linear 0s infinite alternate;
+    -o-animation: shrink3 1s linear 0s infinite alternate;
+    animation: shrink3 1s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes shrink3 {
+  0% {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale3d(9%);
+  }
+  100% {
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale3d(2%);
+  }
+}
+
+.style-5{
+  transition: .3s ease;
+  width: 10px; height:10px;
+  -webkit-animation: shrink4 1s linear 0s infinite alternate;
+  -moz-animation: shrink4 1s linear 0s infinite alternate;
+  -ms-animation: shrink4 1s linear 0s infinite alternate;
+  -o-animation: shrink4 1s linear 0s infinite alternate;
+  animation: shrink4 1s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes shrink4 {
+  0% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale3d(8%);
+  }
+  100% {
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale3d(9%);
+  }
+}
+
+// #Vector_96{
+//   transition: .3s ease;
+//   -webkit-animation: Vector_96 1s linear 0s infinite alternate;
+// }
+
+// @-webkit-keyframes Vector_96 {
+//   0% {
+//     transform: rotate(1deg);
+//   }
+//   100% {
+//     transform: rotate(-0.1deg)
+//   }
+// }

@@ -1,0 +1,31 @@
+
+// **********************0** Auth pages
+.line-around {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid $light; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    .line-around-1 { 
+        background:#fff; 
+        padding:0 10px; 
+    }
+ }
+
+ .social-btn {
+     .btn{
+         padding: 10px 30px;
+     }
+    .btn-outline-light:hover{
+        background-color: $white;
+    }
+ }
+
+.user-sidebar{
+    .user-profile{
+        .sideuser-info{
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+    }
+}
