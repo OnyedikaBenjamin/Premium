@@ -32,7 +32,7 @@ class User extends Authenticatable implements HasMedia
     ];
 
     /**
-     * The attributes that should be hidden for arrays.
+     * The attributes that should be hidden for arrays..
      *
      * @var array
      */
